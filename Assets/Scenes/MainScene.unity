@@ -142,7 +142,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   START_ANGLE: -90
   TURN_AROUND_ANGLE: 90
-  ROTATION_SPEED: 2
+  ROTATION_SPEED: 4
 --- !u!1 &249722008
 GameObject:
   m_ObjectHideFlags: 0
