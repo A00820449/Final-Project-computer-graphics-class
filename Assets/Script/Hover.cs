@@ -8,7 +8,7 @@ public class Hover : MonoBehaviour
     public float TIME_OFFSET = 0f;
     public bool ENABLED = true;
     float startingY;
-    float counter = Mathf.PI;
+    float counter = 3 * Mathf.PI / 2;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,9 +21,16 @@ public class Hover : MonoBehaviour
         if (ENABLED)
         {
             Vector3 newPosition = this.transform.position;
-            newPosition.y = startingY + (Mathf.Cos(counter + TIME_OFFSET) + 1.0f) * HOVER_STRENGTH;
+            newPosition.y = startingY + (Mathf.Sin(counter + TIME_OFFSET) + 1.0f) * HOVER_STRENGTH;
             this.transform.position = newPosition;
-            counter += Time.deltaTime;
+            if (counter < 999999999f)
+            {
+                counter = counter + Time.deltaTime;
+            }
+            else
+            {
+                counter = Mathf.Asin(Mathf.Sin(counter)) + Time.deltaTime;
+            }
         }
     }
 }
