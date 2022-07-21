@@ -10,6 +10,10 @@ public class TurnAround : MonoBehaviour
     Quaternion startRotation;
     Quaternion endRotation;
     bool turnedAround = false;
+    public bool TURNED_AROUND 
+    {
+        get { return turnedAround; }
+    }
     float rotationCounter = 0f;
     // Start is called before the first frame update
     void Start()
