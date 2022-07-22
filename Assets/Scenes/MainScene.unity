@@ -270,7 +270,7 @@ GameObject:
   - component: {fileID: 557542717}
   - component: {fileID: 557542716}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -310,7 +310,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 4a06eae6dae8f3e45a5c73f797126114, type: 2}
+  - {fileID: 2100000, guid: fbfbe3ca3fa88d6439229886f7c971a2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -541,6 +541,7 @@ GameObject:
   - component: {fileID: 1221171617}
   - component: {fileID: 1221171616}
   - component: {fileID: 1221171615}
+  - component: {fileID: 1221171618}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -615,6 +616,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1221171618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1221171614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474e807120dd392b6906ddc17c9c5707, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MOVEMENT_SPEED: 0.1
 --- !u!1 &1325745898
 GameObject:
   m_ObjectHideFlags: 0
