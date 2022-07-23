@@ -14,7 +14,7 @@ public class CameraController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        this.transform.position += Vector3.forward * Input.GetAxis("Vertical") * MOVEMENT_SPEED;
-        this.transform.position += Vector3.right * Input.GetAxis("Horizontal") * MOVEMENT_SPEED;
+        this.transform.position += this.transform.forward * Input.GetAxis("Vertical") * MOVEMENT_SPEED;
+        this.transform.position += this.transform.right * Input.GetAxis("Horizontal") * MOVEMENT_SPEED;
     }
 }
