@@ -27,20 +27,23 @@ public class TurnAround : MonoBehaviour
     {   
         if (turnedAround != Input.GetButton("Jump"))
         {
+            // Resets the counter if the user pressed/stopped pressing the button
             rotationCounter = 0f;
             turnedAround = Input.GetButton("Jump");
         }
+        // Sets rotation depending on whether or not the button is being held down
         if (turnedAround)
         {
-            this.transform.rotation = Quaternion.Lerp(this.transform.rotation, endRotation, rotationCounter * Time.deltaTime);
+            this.transform.rotation = Quaternion.Lerp(this.transform.rotation, endRotation, rotationCounter);
         }
         else
         {
-            this.transform.rotation = Quaternion.Lerp(this.transform.rotation, startRotation, rotationCounter * Time.deltaTime);
+            this.transform.rotation = Quaternion.Lerp(this.transform.rotation, startRotation, rotationCounter);
         }
-        if (rotationCounter < 999999999f)
+        // Avoids getting the counter bigger than necessary
+        if (rotationCounter <= 1f)
         {
-            rotationCounter += ROTATION_SPEED;
+            rotationCounter += ROTATION_SPEED * Time.deltaTime;
         }
     }
 }
