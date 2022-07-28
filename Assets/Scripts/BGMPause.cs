@@ -10,6 +10,7 @@ public class BGMPause : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // Getting components
         bgm = GetComponent<AudioSource>();
         marioScript = GameObject.FindWithTag("Player").GetComponent<TurnAround>();
     }
@@ -17,6 +18,7 @@ public class BGMPause : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // If Mario is turned around pause the music
         if (marioScript.TURNED_AROUND)
         {
             if (playing)
@@ -25,6 +27,7 @@ public class BGMPause : MonoBehaviour
                 playing = false;
             }
         }
+        // If Mario turns back, resume
         else
         {
             if (!playing)

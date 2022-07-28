@@ -17,10 +17,12 @@ public class CameraController : MonoBehaviour
     {
         if (Input.GetMouseButton(0))
         {
+            // If the mouse button is being held, rotate the camera based on mouse movement
             this.transform.eulerAngles += new Vector3(Input.GetAxis("Mouse Y"), -Input.GetAxis("Mouse X"), 0f) * ROTATION_SPEED;
         }
         else
         {
+            // If the button isn't being held, move the camera based on axis input
             this.transform.position += this.transform.forward * Input.GetAxis("Vertical") * MOVEMENT_SPEED;
             this.transform.position += this.transform.right * Input.GetAxis("Horizontal") * MOVEMENT_SPEED;
         }

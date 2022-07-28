@@ -15,6 +15,7 @@ public class LightFlicker : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // Getting compontent and starting the coroutine
         lightComponent = GetComponent<Light>();
         StartCoroutine(flicker());
     }
@@ -27,12 +28,20 @@ public class LightFlicker : MonoBehaviour
     IEnumerator flicker() {
         float waitTime;
         int flickers;
-        while (true) {
+        // The flickers will last as long as the script is enabled
+        while (true) 
+        {
+            // The light range when the light is on is given by ON_RANGE
             lightComponent.range = ON_RANGE;
+
+            // Randomized wait time between flickers
             waitTime = Random.Range(MIN_TIME_BETWEEN_FLICKERS, MAX_TIME_BETWEEN_FLICKERS);
             yield return new WaitForSeconds(waitTime);
+
+            // Randomized amount of flickers
             flickers = Random.Range(MIN_FLICKER_AMOUNT, MAX_FLICKER_AMOUNT + 1);
             for (int i = 1; i <= flickers; i++) {
+                // The light range when the light is off is given by OFF_RANGE
                 lightComponent.range = OFF_RANGE;
                 yield return new WaitForSeconds(FLICKER_LENGTH);
                 lightComponent.range = ON_RANGE;
