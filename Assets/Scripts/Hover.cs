@@ -8,7 +8,7 @@ public class Hover : MonoBehaviour
     public float TIME_OFFSET = 0f;
     public bool ENABLED = true;
     float startingY;
-    float counter = 3 * Mathf.PI / 2;
+    float counter = 3 * Mathf.PI / 2; // Starts at 3/2 pi so the Sine function starts at -1 (lowest point)
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +23,8 @@ public class Hover : MonoBehaviour
         {
             // Move the object's Y position up and down with the help of the Sine function
             Vector3 newPosition = this.transform.position;
+
+            // 1.0f is added to so the range of Sin becomes [0,2] instead of [-1,1] (this makes the starting Y position the lowest point)
             newPosition.y = startingY + (Mathf.Sin(counter + TIME_OFFSET) + 1.0f) * HOVER_STRENGTH;
             this.transform.position = newPosition;
 

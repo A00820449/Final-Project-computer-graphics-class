@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// Test script (Unused)
 public class LightPulse : MonoBehaviour
 {
     public float PULSE_RANGE = 4.0f;
