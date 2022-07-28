@@ -2257,9 +2257,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1885335131331726593}
+  - component: {fileID: 242254440}
   m_Layer: 0
   m_Name: Mario
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2309,6 +2310,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &242254440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3202437055120506642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a10f7e11451a704cbeb5f318ec646b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  START_ANGLE: -90
+  TURN_AROUND_ANGLE: 90
+  ROTATION_SPEED: 4
 --- !u!1 &3313910184849596153
 GameObject:
   m_ObjectHideFlags: 0
@@ -2727,7 +2743,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3703217969444968737}
-  m_LocalRotation: {x: 0, y: -0, z: -0.000000026698213, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: -0.53729963, w: 0.8433914}
   m_LocalPosition: {x: -0.1557528, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2735,7 +2751,7 @@ Transform:
   - {fileID: 2139375218270203953}
   m_Father: {fileID: 4465420451466051933}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -65}
 --- !u!1 &3724879128943726346
 GameObject:
   m_ObjectHideFlags: 0
@@ -3300,7 +3316,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4669803890854272562}
-  m_LocalRotation: {x: -8.835242e-29, y: 0, z: -8.4703295e-22, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0.53729963, w: 0.8433915}
   m_LocalPosition: {x: -0.15575281, y: -0.0000001550293, z: 0.0000000072669986}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3308,7 +3324,7 @@ Transform:
   - {fileID: 2911996978251553576}
   m_Father: {fileID: 843084394128843408}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 65}
 --- !u!1 &4732263643475589609
 GameObject:
   m_ObjectHideFlags: 0
