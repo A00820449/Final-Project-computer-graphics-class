@@ -9,7 +9,7 @@ Build the project or open the main scene on the editor (MainScene). Once the sce
 While the camera is not being rotated, it can be moved by using the WASD/Arrow keys. The direction of the movement will change based on the current rotation of the camera.  
 To make Mario turn around, simply press and hold the Space key. While doing this, Boo will stop moving, his shadow will disappear, and the music will stop playing. To resume, simply release the Space key.  
 ## Credits
-The Mario and Boo Unity models were provided by the HelloMarioAssets package: <https://hellofangaming.github.io/HelloMarioAssets/>  
+The Mario and Boo models were provided by the HelloMarioAssets package: <https://hellofangaming.github.io/HelloMarioAssets/>  
 The music used is Haunted House BGM from Super Mario World (SNES).  
 ## Descriptive Document
 [Google Doc link](https://docs.google.com/document/d/1QYXc2Ic8y-vCSDj8-I6s35F1wqkyncgSM7WlNwEUeN8/edit?usp=sharing)
